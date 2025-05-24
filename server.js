@@ -13,13 +13,10 @@ app.use(cors({
 
 app.use(express.json());
 
-// Connect DB
 connectDB();
 
-// Routes
 app.use('/api/auth', authRoutes);
 
-// Start server
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
