@@ -7,9 +7,13 @@ const app = express();
 const PORT = 4700;
 
 app.use(cors({
-  origin: 'http://localhost:5173', 
+  origin: [
+    'http://localhost:5173', 
+    'https://frontend-task-nithin-o2mn-on1t71r5r-nithins-projects-19efe843.vercel.app'
+  ],
   credentials: true
 }));
+
 
 app.use(express.json());
 
